@@ -1,0 +1,2 @@
+hdc.call_all()
+hdc.f_Run_all_process()
