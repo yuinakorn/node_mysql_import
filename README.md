@@ -18,7 +18,11 @@ npm install
 npm install pm2 -g
 ```
 
+## การใช้งาน
+    
+-   แก้ไขไฟล์ env.example และเปลี่ยนชื่อเป็น .env และแก้ไขค่าให้ถูกต้อง
+
 ```bash
-pm2 start app.js
+pm2 start app.js.bak
 pm2 save
 ```
