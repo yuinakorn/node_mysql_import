@@ -24,18 +24,6 @@ const server_name = '73';
 const function_list = currentDir + '/function_list.txt';
 
 
-// function insert_log(msg) {
-//     return new Promise(resolve => {
-//         let sql = "INSERT INTO `hdc_log_cm` (`server_name`, `process_name`, `process_date`) VALUES (?, ?, ?);";
-//         let values = ['73', msg, datetime];
-//         connection.ser73.query(sql, values, (err, result) => {
-//             if (err) throw err;
-//             resolve(result);
-//             console.log(`record ${msg}`);
-//         });
-//     });
-// }
-
 function executeShellCommand(cmd, msg) {
     return new Promise(resolve => {
         exec(cmd, (error, stdout, stderr) => {
